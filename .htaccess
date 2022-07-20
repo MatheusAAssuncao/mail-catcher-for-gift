@@ -1,0 +1,8 @@
+#Alias /teste /var/www/html/landing/ealive-codes/
+#<Directory /var/www/html/landing/ealive-codes/>
+#  Require all granted
+#</Directory>
+
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !teste2/
+RewriteRule (.*) /var/www/html/landing/app/public/$1 [L]
